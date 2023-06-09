@@ -11,12 +11,18 @@ import { MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { AppRoutingModule } from './app-routing.module';
+import { LoginComponent } from './login/login.component';
+import { LogoutComponent } from './logout/logout.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
     ExpenseEntryComponent,
     ExpenseEntryListComponent,
-    DebugComponent
+    DebugComponent,
+    LoginComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +32,8 @@ import { AppRoutingModule } from './app-routing.module';
                                  MatTableModule,
                                      MatButtonModule,
                                      MatIconModule,
-                                     AppRoutingModule
+                                     AppRoutingModule,
+                                     ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
